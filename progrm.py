@@ -42,7 +42,7 @@
 # #     else:
 # #         print("Too high! Try again.")
 #   CONDIIONAL STATEMENTS 
-#
+
 # number=int(input("enter the number:"))
 # if(number%2==0):
 #     print("entered nuber is even")
@@ -202,7 +202,7 @@
  
 
 
-## revison for the python from the basics 
+# # revison for the python from the basics 
 # variables how to declare variables in python in python it will asign the variabl type automatically
 # for example 
 # x=10
@@ -215,12 +215,12 @@
 # print(type(price))
 # print(type(weight))
 # how the input and the output will works in the python is 
-#for input we ahve to mention the keyword input and we acan get the input from the  user ok.. for out we just want to use the print key word that is more than enuogh for the out put..
+# for input we ahve to mention the keyword input and we acan get the input from the  user ok.. for out we just want to use the print key word that is more than enuogh for the out put..
 # name=input("Enter the name:")
 # print("hello",name)
 # what is type casting 
-#practice progrms
-#swap two number usin temp
+# practice progrms
+# swap two number usin temp
 # # even or odd one thing keep in my that if anything know program is came than use the tricks and thalogic it will easy u to to remember..
 # num=int(input("enter the number:"))
 # if num%2==0:
@@ -260,7 +260,7 @@
 
 
 
-#print numbers from 1 to 10 
+# print numbers from 1 to 10 
 # for i in range (1,11):
 #     print(i)
 
@@ -298,10 +298,67 @@
 # for digit in number:
 #     count +=1
 # print("Total digits:", count)
-number=int(input("enter the number="))
-sum=0
-for i in range(1,5):
-    sum=sum+i
-print("sum is :", sum)
+# number=int(input("enter the number="))
+# sum=0
+# for i in range(1,5):
+#     sum=sum+i
+# print("sum is :", sum)
+
+##FUNCTIONS IN PYTHON
+# def add(a,b):
+#     return a+b
+# print(add(5,3))
+# def square(n):
+#     return n*n
+# square(2)
+# def greet():
+#     print("hello")
+# greet()
+#add function
+def add(a,b):
+    return a+b
+def substract(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def menu():
+    print("\n------ Advanced Calculator ------")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+def main():
+    while True:
+        menu()
+        choice = input("enter the choice: ")
+
+        if choice =="1":
+            a=float(input("enter first nuber :"))
+            b=float(input("enter second number; "))
+            print("result:", add(a,b))
+        elif choice=="2":
+            a=float(input("enter first nuber :"))
+            b=float(input("enter second number; "))
+            print("result:", substract(a,b))
+        elif choice=="3":
+            a=float(input("enter first nuber :"))
+            b=float(input("enter second number; "))
+            print("result:", mul(a,b))
+        elif choice=="4":
+            print("exiting calculator")
+            break
+        else:
+            print("invalid choice. Try again.")
+
+main()
+
+    
 
 
+
+
+
+ 
+
+
+
+ 
