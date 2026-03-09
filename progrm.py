@@ -315,41 +315,43 @@
 #     print("hello")
 # greet()
 #add function
-def add(a,b):
-    return a+b
-def substract(a,b):
-    return a-b
-def mul(a,b):
-    return a*b
-def menu():
-    print("\n------ Advanced Calculator ------")
-    print("1. Addition")
-    print("2. Subtraction")
-    print("3. Multiplication")
-def main():
-    while True:
-        menu()
-        choice = input("enter the choice: ")
+# def add(a,b):
+#     return a+b
+# def substract(a,b):
+#     return a-b
+# def mul(a,b):
+#     return a*b
+# def menu():
+#     print("\n------ Advanced Calculator ------")
+#     print("1. Addition")
+#     print("2. Subtraction")
+#     print("3. Multiplication")
+# def main():
+#     while True:
+#         menu()
+#         choice = input("enter the choice: ")
 
-        if choice =="1":
-            a=float(input("enter first nuber :"))
-            b=float(input("enter second number; "))
-            print("result:", add(a,b))
-        elif choice=="2":
-            a=float(input("enter first nuber :"))
-            b=float(input("enter second number; "))
-            print("result:", substract(a,b))
-        elif choice=="3":
-            a=float(input("enter first nuber :"))
-            b=float(input("enter second number; "))
-            print("result:", mul(a,b))
-        elif choice=="4":
-            print("exiting calculator")
-            break
-        else:
-            print("invalid choice. Try again.")
+#         if choice =="1":
+#             a=float(input("enter first nuber :"))
+#             b=float(input("enter second number; "))
+#             print("result:", add(a,b))
+#         elif choice=="2":
+#             a=float(input("enter first nuber :"))
+#             b=float(input("enter second number; "))
+#             print("result:", substract(a,b))
+#         elif choice=="3":
+#             a=float(input("enter first nuber :"))
+#             b=float(input("enter second number; "))
+#             print("result:", mul(a,b))
+#         elif choice=="4":
+#             print("exiting calculator")
+#             break
+#         else:
+#             print("invalid choice. Try again.")
 
-main()
+# main()
+
+
 
     
 
