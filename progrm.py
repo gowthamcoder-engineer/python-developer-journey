@@ -351,6 +351,147 @@
 
 # main()
 
+ #  LETS START WITH THE MAKING PROJECT SO THAT I CAN LEARN THE CONCEPTS PRACTICALLY..
+# PROJECT NAME : NUMBER UTILITY TOOLKIT 
+# Even or Odd
+def even_odd(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+# Prime check
+def prime(num):
+
+    if num < 2:
+        return "Not Prime"
+
+    for i in range(2, num):
+        if num % i == 0:
+            return "Not Prime"
+
+    return "Prime"
+
+
+# Factorial
+def factorial(num):
+
+    fact = 1
+
+    for i in range(1, num + 1):
+        fact = fact * i
+
+    return fact
+
+
+# Reverse number
+def reverse(num):
+
+    rev = 0
+
+    while num > 0:
+
+        digit = num % 10
+        rev = rev * 10 + digit
+        num = num // 10
+
+    return rev
+
+
+# Sum of digits
+def sum_digits(num):
+
+    total = 0
+
+    while num > 0:
+
+        digit = num % 10
+        total += digit
+        num = num // 10
+
+    return total
+
+
+# Largest of 3 numbers
+def largest(a, b, c):
+
+    if a >= b and a >= c:
+        return a
+
+    elif b >= a and b >= c:
+        return b
+
+    else:
+        return c
+
+
+# Menu
+def menu():
+
+    print("\n---- Number Toolkit ----")
+    print("1 Even / Odd")
+    print("2 Prime")
+    print("3 Factorial")
+    print("4 Reverse")
+    print("5 Sum of digits")
+    print("6 Largest of 3")
+    print("7 Exit")
+
+
+# Main program
+def main():
+
+    while True:
+
+        menu()
+
+        choice = input("Enter choice: ")
+
+        if choice == "1":
+
+            n = int(input("Enter number: "))
+            print(even_odd(n))
+
+        elif choice == "2":
+
+            n = int(input("Enter number: "))
+            print(prime(n))
+
+        elif choice == "3":
+
+            n = int(input("Enter number: "))
+            print(factorial(n))
+
+        elif choice == "4":
+
+            n = int(input("Enter number: "))
+            print(reverse(n))
+
+        elif choice == "5":
+
+            n = int(input("Enter number: "))
+            print(sum_digits(n))
+
+        elif choice == "6":
+
+            a = int(input("Enter a: "))
+            b = int(input("Enter b: "))
+            c = int(input("Enter c: "))
+
+            print(largest(a, b, c))
+
+        elif choice == "7":
+
+            print("Program ended")
+            break
+
+        else:
+            print("Invalid choice")
+
+
+main()
+
 
 
     
